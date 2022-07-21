@@ -28,6 +28,8 @@ p2_conf is how confident the algorithm is in its #2 prediction → 1%
 p2_dog is whether or not the #2 prediction is a breed of dog → TRUE etc.
 
 ## Gathering Data
+**Enhanced Twitter Archive** can be downloaded from here: (https://support.twitter.com/articles/20170160)
+
 **The tweet image predictions**
 
 This file (image_predictions.tsv) is present in each tweet according to a neural network. It is hosted on Udacity's servers and should be downloaded programmatically using the Requests library and the following URL: https://d17h27t6h515a5.cloudfront.net/topher/2017/August/599fd2ad_image-predictions/image-predictions.tsv
