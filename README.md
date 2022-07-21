@@ -26,3 +26,14 @@ p1_dog is whether or not the #1 prediction is a breed of dog → TRUE
 p2 is the algorithm's second most likely prediction → Labrador retriever
 p2_conf is how confident the algorithm is in its #2 prediction → 1%
 p2_dog is whether or not the #2 prediction is a breed of dog → TRUE etc.
+
+## Gathering Data
+**The tweet image predictions**
+
+This file (image_predictions.tsv) is present in each tweet according to a neural network. It is hosted on Udacity's servers and should be downloaded programmatically using the Requests library and the following URL: https://d17h27t6h515a5.cloudfront.net/topher/2017/August/599fd2ad_image-predictions/image-predictions.tsv
+
+**Additional data from the Twitter API**
+
+Gather each tweet's retweet count and favorite ("like") count at the minimum and any additional data you find interesting. Using the tweet IDs in the WeRateDogs Twitter archive, query the Twitter API for each tweet's JSON data using Python's Tweepy library and store each tweet's entire set of JSON data in a file called tweet_json.txt file.
+
+Each tweet's JSON data should be written to its own line. Then read this .txt file line by line into a pandas DataFrame with (at minimum) tweet ID, retweet count, and favorite count. Note: do not include your Twitter API keys, secrets, and tokens in your project submission.
